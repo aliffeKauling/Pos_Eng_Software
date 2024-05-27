@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src gap://ready file://* *; style-src 'self' http://* https://* 'unsafe-inline'; script-src 'self' http://* https://* 'unsafe-inline' 'unsafe-eval';">
+<style>
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+body { 
+}
+  
+table {
+    border: 0px;
+    border-collapse: collapse;
+    cellspacing: 0px;
+    cellpadding: 1px; 
+    align: center;
+    width: 100%;  
+    bgcolor: gray;    
+}
+
+td, th { 
+    border: 0px solid #9B9B9B; 
+    text-align: left; 
+}
+th { 
+    background: #333; 
+    color: #20b188;
+    font-style: normal; 
+    font-weight: normal;
+    font-size: 110%;
+}
+.even-header-col { 
+    background: #444; 
+}
+
+
+td { 
+    background: #116666; 
+    color: #dddddd;
+    width: 45%;
+}
+.cell00 { 
+    background: #274642; 
+    color: #cccccc;
+    width: 7%;
+}
+.cell01 { 
+    background: #073642; 
+    color: #cccccc;
+    width: 7%;
+}
+.cell10 { 
+    background: #005a6faa;
+    color: #cccccc; 
+    width: 7%;
+}
+.cell11 { 
+    background: #004454aa;
+    color: #dddddd; 
+    width: 7%;
+}
+
+.hide-icon {
+  opacity:0;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+
+#icons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#icons .icon {
+    width: 32px;
+    padding: 0px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#icons .icon .codicon {
+    font-size: 32px;
+    padding-bottom: 16px;
+}
+.level0 td:first-child {
+    padding-left: 0px;
+}
+.level1 td:first-child {
+    padding-left: 15px;
+}
+.level2 td:first-child {
+    padding-left: 30px;
+}
+</style>
+<link href="codiconsUriVar" rel="stylesheet" />
+<script>
+var vscode = acquireVsCodeApi();
+
+function toggleBranch( el ) {
+    var currentClassName = el.className;
+    var parent = el.parentElement;
+    var grandParent = parent.parentElement;
+    var table = document.getElementById("treeTableWidget");    
+    for( let row of table.rows ) {
+        if( row.className === 'Header' ) // header
+            continue;
+        console.log(row.id+'     '+row.className);
+        if( row.id.startsWith(grandParent.id) && row.id !== grandParent.id ) {
+            if( "codicon codicon-chevron-down" === currentClassName ) {
+                row.hidden = true;
+            } else {
+                row.hidden = false;
+            }
+        
+        }
+    }  
+    
+    if( "codicon codicon-chevron-down" === currentClassName ) {
+        el.className = 'codicon codicon-chevron-right';
+        el.style.color = 'blue';
+    } else {
+        el.className = 'codicon codicon-chevron-down';
+        el.style.color = 'gray';
+    }
+}
+</script>
+</head>
+<body>
+ <!-- ..........................data begin...........................  -->
+
+    <TABLE id="treeTableWidget"/> 
+    <tr class="Header">
+
+     <th class="even-header-col">&nbsp;OPERATION&nbsp;</th>
+
+     <th class="odd-header-col">&nbsp;OBJECT_NAME&nbsp;</th>
+
+     <th class="even-header-col">&nbsp;OPTIONS&nbsp;</th>
+
+     <th class="odd-header-col">&nbsp;CARDINALITY&nbsp;</th>
+
+     <th class="even-header-col">&nbsp;COST&nbsp;</th>
+
+     <th class="odd-header-col">&nbsp;LAST...GETS&nbsp;</th>
+
+     <th class="even-header-col">&nbsp;LAST...TIME&nbsp;</th>
+
+    </tr>
+
+   <tr class="level-1" id="0">
+      <td><i class="codicon codicon-chevron-down" onclick="toggleBranch(this)"></i>&nbsp;SELECT STATEMENT&nbsp;</td>
+      <td class="cell10">&nbsp;&nbsp&nbsp;</td>
+      <td class="cell11">&nbsp;&nbsp&nbsp;</td>
+      <td class="cell10">&nbsp;&nbsp&nbsp;</td>
+      <td class="cell11">&nbsp;36&nbsp;</td>
+      <td class="cell10">&nbsp;3&nbsp;</td>
+      <td class="cell11">&nbsp;228&nbsp;</td>
+   </tr>
+   <tr class="level0" id="0.0">
+      <td><i class="codicon codicon-chevron-down" onclick="toggleBranch(this)"></i>&nbsp;MAT_VIEW ACCESS&nbsp;</td>
+      <td class="cell00">&nbsp;MV_SALES_ANALYSIS&nbsp;</td>
+      <td class="cell01">&nbsp;FULL&nbsp;</td>
+      <td class="cell00">&nbsp;14503&nbsp;</td>
+      <td class="cell01">&nbsp;36&nbsp;</td>
+      <td class="cell00">&nbsp;3&nbsp;</td>
+      <td class="cell01">&nbsp;228&nbsp;</td>
+   </tr>
+   <tr class="level1" id="0.0.0">
+      <td><i class="codicon codicon-chevron-down hide-icon" onclick="toggleBranch(this)"></i>&nbsp;Other XML&nbsp;</td>
+   </tr>
+</table>
+
+ <!-- ..........................data end...........................  -->
+
