@@ -1,0 +1,38 @@
+package teste;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import Ordenacao.QuickSort;
+
+class QuickSortTest {
+
+	 @Test
+	    public void testSortSortedArray() {
+	        MergeSort sorter = new MergeSort();
+	        int arr[] = {1, 2, 3, 4, 5};
+	        sorter.sort(arr, 0, arr.length - 1);
+	        int expected[] = {1, 2, 3, 4, 5};
+	        assertArrayEquals(expected, arr);
+	    }
+
+	    @Test
+	    public void testSortReversedArray() {
+	        MergeSort sorter = new MergeSort();
+	        int arr[] = {5, 4, 3, 2, 1};
+	        sorter.sort(arr, 0, arr.length - 1);
+	        int expected[] = {1, 2, 3, 4, 5};
+	        assertArrayEquals(expected, arr);
+	    }
+
+	    @Test
+	    public void testSortArrayWithDuplicates() {
+	        MergeSort sorter = new MergeSort();
+	        int arr[] = {3, 1, 2, 1, 2};
+	        sorter.sort(arr, 0, arr.length - 1);
+	        int expected[] = {1, 1, 2, 2, 3};
+	        assertArrayEquals(expected, arr);
+	    }
+
+}

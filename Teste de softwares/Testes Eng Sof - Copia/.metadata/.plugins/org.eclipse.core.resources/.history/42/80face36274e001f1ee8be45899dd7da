@@ -1,0 +1,58 @@
+package teste;
+
+import static org.junit.Assert.assertArrayEquals;
+import org.junit.Test;
+
+import Ordenacao.QuickSort;
+
+public class QuickSortTest {
+
+int resultado[] = new int[] {};
+	   @Test
+	    public void testArrayVazio() {
+	        int[] array = {};
+	        int[] expected = {};
+	        QuickSort.sort(array);
+	        assertArrayEquals(expected, array);
+	    }
+
+	    @Test
+	    public void testArrayUmElemento() {
+	        int[] array = {1};
+	        int[] expected = {1};
+	        resultado = QuickSort.sort(array);
+	        assertArrayEquals(expected, resultado);
+	    }
+
+	    @Test
+	    public void testSortedArray() {
+	        int[] array = {1, 2, 3, 4, 5};
+	        int[] expected = {1, 2, 3, 4, 5};
+	        QuickSort.sort(array);
+	        assertArrayEquals(expected, array);
+	    }
+
+	    @Test
+	    public void testArrayInverso() {
+	        int[] array = {5, 4, 3, 2, 1};
+	        int[] expected = {1, 2, 3, 4, 5};
+	        QuickSort.sort(array);
+	        assertArrayEquals(expected, array);
+	    }
+
+	    @Test
+	    public void testArrayElementosDuplicado() {
+	        int[] array = {3, 1, 2, 3, 3, 0};
+	        int[] expected = {0, 1, 2, 3, 3, 3};
+	        QuickSort.sort(array);
+	        assertArrayEquals(expected, array);
+	    }
+
+	    @Test
+	    public void testArrayElementosNegativos() {
+	        int[] array = {-3, -1, -2, -4, -5};
+	        int[] expected = {-5, -4, -3, -2, -1};
+	        QuickSort.sort(array);
+	        assertArrayEquals(expected, array);
+	    }
+}

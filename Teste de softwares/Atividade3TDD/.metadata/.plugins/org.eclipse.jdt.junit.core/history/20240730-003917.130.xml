@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="QuickSortTest.testSortedArray" project="src" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="teste.QuickSortTest" time="0.006" displayname="QuickSortTest" uniqueid="[engine:junit-vintage]/[runner:teste.QuickSortTest]">
+    <testcase name="testSortedArray" classname="teste.QuickSortTest" time="0.006" displayname="testSortedArray" uniqueid="[engine:junit-vintage]/[runner:teste.QuickSortTest]/[test:testSortedArray(teste.QuickSortTest)]"/>
+  </testsuite>
+</testrun>

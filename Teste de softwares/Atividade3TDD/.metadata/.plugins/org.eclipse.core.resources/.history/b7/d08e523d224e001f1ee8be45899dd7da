@@ -1,0 +1,12 @@
+package teste;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import Ordenacao.QuickSort;
+
+class QuickSortTest {
+
+
+}

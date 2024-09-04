@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteOrdenacao" project="src" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="teste.TesteOrdenacao" time="0.226" displayname="TesteOrdenacao" uniqueid="[engine:junit-jupiter]/[class:teste.TesteOrdenacao]">
+    <testcase name="testSortArrayWithDuplicates" classname="teste.TesteOrdenacao" time="0.198" displayname="testSortArrayWithDuplicates()" uniqueid="[engine:junit-jupiter]/[class:teste.TesteOrdenacao]/[method:testSortArrayWithDuplicates()]"/>
+    <testcase name="testSortReversedArray" classname="teste.TesteOrdenacao" time="0.01" displayname="testSortReversedArray()" uniqueid="[engine:junit-jupiter]/[class:teste.TesteOrdenacao]/[method:testSortReversedArray()]"/>
+    <testcase name="testSortSortedArray" classname="teste.TesteOrdenacao" time="0.004" displayname="testSortSortedArray()" uniqueid="[engine:junit-jupiter]/[class:teste.TesteOrdenacao]/[method:testSortSortedArray()]"/>
+  </testsuite>
+</testrun>

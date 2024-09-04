@@ -1,0 +1,6 @@
+package QuickSort;
+import QuickSort.QuickSort;
+
+public class QuickSort {
+
+}

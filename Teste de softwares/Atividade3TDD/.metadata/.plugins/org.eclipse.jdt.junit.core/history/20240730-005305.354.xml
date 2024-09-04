@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="QuickSortTest" project="src" tests="6" started="6" failures="6" errors="0" ignored="0">
+  <testsuite name="teste.QuickSortTest" time="0.058" displayname="QuickSortTest" uniqueid="[engine:junit-vintage]/[runner:teste.QuickSortTest]">
+    <testcase name="testArrayVazio" classname="teste.QuickSortTest" time="0.032" displayname="testArrayVazio" uniqueid="[engine:junit-vintage]/[runner:teste.QuickSortTest]/[test:testArrayVazio(teste.QuickSortTest)]">
+      <failure>java.lang.AssertionError: actual array was null&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:49)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)&#13;
+	at org.junit.Assert.internalArrayEquals(Assert.java:534)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:418)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:429)&#13;
+	at teste.QuickSortTest.testArrayVazio(QuickSortTest.java:16)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testArrayElementosDuplicado" classname="teste.QuickSortTest" time="0.005" displayname="testArrayElementosDuplicado" uniqueid="[engine:junit-vintage]/[runner:teste.QuickSortTest]/[test:testArrayElementosDuplicado(teste.QuickSortTest)]">
+      <failure>java.lang.AssertionError: actual array was null&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:49)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)&#13;
+	at org.junit.Assert.internalArrayEquals(Assert.java:534)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:418)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:429)&#13;
+	at teste.QuickSortTest.testArrayElementosDuplicado(QuickSortTest.java:48)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testSortedArray" classname="teste.QuickSortTest" time="0.004" displayname="testSortedArray" uniqueid="[engine:junit-vintage]/[runner:teste.QuickSortTest]/[test:testSortedArray(teste.QuickSortTest)]">
+      <failure>java.lang.AssertionError: actual array was null&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:49)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)&#13;
+	at org.junit.Assert.internalArrayEquals(Assert.java:534)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:418)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:429)&#13;
+	at teste.QuickSortTest.testSortedArray(QuickSortTest.java:32)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testArrayUmElemento" classname="teste.QuickSortTest" time="0.004" displayname="testArrayUmElemento" uniqueid="[engine:junit-vintage]/[runner:teste.QuickSortTest]/[test:testArrayUmElemento(teste.QuickSortTest)]">
+      <failure>java.lang.AssertionError: actual array was null&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:49)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)&#13;
+	at org.junit.Assert.internalArrayEquals(Assert.java:534)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:418)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:429)&#13;
+	at teste.QuickSortTest.testArrayUmElemento(QuickSortTest.java:24)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testArrayElementosNegativos" classname="teste.QuickSortTest" time="0.004" displayname="testArrayElementosNegativos" uniqueid="[engine:junit-vintage]/[runner:teste.QuickSortTest]/[test:testArrayElementosNegativos(teste.QuickSortTest)]">
+      <failure>java.lang.AssertionError: actual array was null&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:49)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)&#13;
+	at org.junit.Assert.internalArrayEquals(Assert.java:534)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:418)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:429)&#13;
+	at teste.QuickSortTest.testArrayElementosNegativos(QuickSortTest.java:56)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testArrayInverso" classname="teste.QuickSortTest" time="0.004" displayname="testArrayInverso" uniqueid="[engine:junit-vintage]/[runner:teste.QuickSortTest]/[test:testArrayInverso(teste.QuickSortTest)]">
+      <failure>java.lang.AssertionError: actual array was null&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:49)&#13;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)&#13;
+	at org.junit.Assert.internalArrayEquals(Assert.java:534)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:418)&#13;
+	at org.junit.Assert.assertArrayEquals(Assert.java:429)&#13;
+	at teste.QuickSortTest.testArrayInverso(QuickSortTest.java:40)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

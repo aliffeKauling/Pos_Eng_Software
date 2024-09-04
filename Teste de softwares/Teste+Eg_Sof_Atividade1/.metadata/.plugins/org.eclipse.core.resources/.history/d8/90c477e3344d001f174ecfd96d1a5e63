@@ -1,0 +1,92 @@
+public class MergeSort {
+	
+	    // Função para mesclar dois subarrays de arr[]
+	    // Primeiro subarray é arr[l..m]
+	    // Segundo subarray é arr[m+1..r]
+	    public void merge(int arr[], int l, int m, int r) {
+	        // Encontra os tamanhos dos subarrays a serem mesclados
+	        int n1 = m - l + 1;
+	        int n2 = r - m;
+
+	        // Cria arrays temporários
+	        int L[] = new int[n1];
+	        int R[] = new int[n2];
+
+	        // Copia dados para os arrays temporários
+	        for (int i = 0; i < n1; ++i)
+	            L[i] = arr[l + i];
+	        for (int j = 0; j < n2; ++j)
+	            R[j] = arr[m + 1 + j];
+
+	        // Mescla os arrays temporários
+
+	        // Índices iniciais do primeiro e segundo subarrays
+	        int i = 0, j = 0;
+
+	        // Índice inicial do array mesclado
+	        int k = l;
+	        while (i < n1 && j < n2) {
+	            if (L[i] <= R[j]) {
+	                arr[k] = L[i];
+	                i++;
+	            } else {
+	                arr[k] = R[j];
+	                j++;
+	            }
+	            k++;
+	        }
+
+	        // Copia os elementos restantes de L[], se houver algum
+	        while (i < n1) {
+	            arr[k] = L[i];
+	            i++;
+	            k++;
+	        }
+
+	        // Copia os elementos restantes de R[], se houver algum
+	        while (j < n2) {
+	            arr[k] = R[j];
+	            j++;
+	            k++;
+	        }
+	    }
+
+	    // Função principal que ordena arr[l..r] usando merge()
+	    public void sort(int arr[], int l, int r) {
+	        if (l < r) {
+	            // Encontra o ponto do meio
+	            int m = (l + r) / 2;
+
+	            // Ordena as duas metades
+	            sort(arr, l, m);
+	            sort(arr, m + 1, r);
+
+	            // Mescla as metades ordenadas
+	            merge(arr, l, m, r);
+	        }
+	    }
+
+	    // Função auxiliar para imprimir o array
+	    static void printArray(int arr[]) {
+	        int n = arr.length;
+	        for (int i = 0; i < n; ++i)
+	            System.out.print(arr[i] + " ");
+	        System.out.println();
+	    }
+
+	    // Método principal para testar o algoritmo
+	    public static void main(String args[]) {
+	        int arr[] = { 12, 11, 13, 5, 6, 7 };
+
+	        System.out.println("Array dado");
+	        printArray(arr);
+
+	        MergeSort ob = new MergeSort();
+	        ob.sort(arr, 0, arr.length - 1);
+
+	        System.out.println("\nArray ordenado");
+	        printArray(arr);
+	    }
+	
+
+}

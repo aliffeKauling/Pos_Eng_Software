@@ -1,0 +1,9 @@
+package Ordenacao;
+
+public class QuickSort {
+	
+	public static int[] sort(int[] array) {
+		return null;
+    }
+}
+
